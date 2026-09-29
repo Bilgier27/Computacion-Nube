@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    font-weight: 600;
+    font-size: 18px;
+}
+.carousel-item{
+    min-height: 400px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+    
+}
+.sevices{
+    padding: 80px 0;
+}
+.bg-Toma{
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ), url(../Assets/Unlocking-the-Power-of-Google-Cloud-Platform.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma2{
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ), url(../Assets/0_5VEmcnBp5i1AJNDU.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma3{
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ), url(../Assets/Microsoft-Azure-2025-Logo.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma4{
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ), url(../Assets/ChatGPT-Image-10-de-set.-de-2025_-17_18_51.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-icons i{
+    font-size: 40px;
+}
+.box-icons h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+.Mejores{
+    padding: 80px 0;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+}
+.banner{
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: #eae5df;
+}
+.banner h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.banner img{
+    width: 300px;
+}
+@media(max-width: 767px){
+    .carousel-item{
+        min-height: 500px;
+    }
+    .carousel-item img{
+        min-height: 500px;
+    }
+    .carousel-caption{
+        bottom: 30px;
+    }
+    .carousel-caption h5{
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .services{
+        padding: 30px 0;
+    }
+    .Mejores{
+        padding: 30px 0;
+    }
+    .banner{
+        margin-bottom: 30px;
+    }
+}
+.image-container {
+    width: 500px;
+    height: 700px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+.video-section video {
+    max-width: 100%;
+    height: auto;
+}
+.bg-danger{
+    width: 100%;
+    text-align: center;
+}
+.bg-primary{
+    width: 100%;
+    text-align: center;
+}
+.bg-black{
+    width: 100%;
+    text-align: center;
+}
+.bil1 {
+    background: #d2a4a4;
+}
+.bil2 {
+    background: #0a497b;
+}
+.bil3 {
+    background: #d5b59c;
+}
+.video-section .btn {
+    display: block;
+    margin: auto auto;
+    padding: 10px 20px;
+    font-size: auto;
+    background-color: #000;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.video-section .btn:hover {
+    transform: scale(1.1);
+}
