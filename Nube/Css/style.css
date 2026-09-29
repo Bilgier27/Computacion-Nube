@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   CSS VARIABLES
+   ============================================================ */
+:root {
+    --primary-color: #f03a47;
+    --secondary-color: #AF5B5F;
+    --accent-color: #0E9C8A;
+    --font-color: #ffff;
+    --alt-color: #f6f4f3;
+    --background-color: #183059;
+    --primary-font: 'Poppins', sans-serif;
+    --section-title-font-size: 2.3rem;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ============================================================
+   CAROUSEL
+   ============================================================ */
+.carousel-item {
+    min-height: 400px;
+}
+.carousel-caption {
+    bottom: 120px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.carousel-caption p {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.carousel-caption .btn-cta {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 28px;
+    background: var(--accent-color);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+.carousel-caption .btn-cta:hover {
+    background: #fff;
+    color: var(--accent-color);
+    transform: scale(1.05);
+}
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 520px;
+    width: 100%;
+}
+
+/* ============================================================
+   SERVICES SECTION
+   ============================================================ */
+.services {
+    padding: 80px 0;
+}
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.services .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+.services .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.services .card-body p {
+    flex: 1;
+}
+.services .card-body .btn {
+    margin-top: 16px;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: transform 0.15s;
+}
+.services .card-body .btn:hover {
+    transform: scale(1.03);
+}
+
+/* Card background images */
+.bg-Toma {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url(../Assets/Unlocking-the-Power-of-Google-Cloud-Platform.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma2 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url(../Assets/0_5VEmcnBp5i1AJNDU.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma3 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url(../Assets/Microsoft-Azure-2025-Logo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-Toma4 {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url(../Assets/ChatGPT-Image-10-de-set.-de-2025_-17_18_51.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============================================================
+   SECTION ICONS
+   ============================================================ */
+.section-icons {
+    background: #f8f9fb;
+    padding: 48px 0 36px;
+    border-top: 1px solid #e8ecf2;
+    border-bottom: 1px solid #e8ecf2;
+    margin: 32px 0;
+}
+.box-icons i { font-size: 40px; }
+.box-icons h3 { font-size: 20px; font-weight: 800; }
+.box-icons {
+    padding: 16px 24px;
+    border-right: 1px solid #e2e6ec;
+}
+.box-icons:last-child { border-right: none; }
+
+/* ============================================================
+   CLOUD GRID (Nubes disponibles)
+   ============================================================ */
+.cloud-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.cloud-filters .btn-filter {
+    font-size: 13px;
+    border: 1px solid #d9dee6;
+    background: #fff;
+    color: #55627A;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.cloud-filters .btn-filter:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.cloud-filters .btn-filter.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+.cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+@media (max-width: 992px) {
+    .cloud-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+    .cloud-grid { grid-template-columns: 1fr; }
+}
+.cloud-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F7F8FA;
+    border: 1px solid #eceff3;
+    border-radius: 12px;
+    padding: 20px 16px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cloud-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+.cloud-card.featured { border-color: rgba(14,156,138,0.2); }
+.cloud-card .logo-wrap {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.cloud-card .logo-wrap img { max-height: 100%; max-width: 100%; }
+.cloud-card .card-body { display: flex; flex-direction: column; flex: 1; }
+.cloud-badge {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+.cloud-badge.IaaS { background: #E7F3FF; color: #1F70C1; }
+.cloud-badge.PaaS { background: #FFF1DE; color: #B87A1E; }
+.cloud-badge.SaaS { background: #E8FBF5; color: #0E9C8A; }
+.cloud-card .card-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+.cloud-card p { font-size: 14px; color: #4a5568; margin-bottom: 0; }
+.cloud-card .extra-fact {
+    font-size: 12.5px;
+    color: #8A93A3;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px dashed #e2e6ec;
+}
+.cloud-card.is-hidden { display: none; }
+
+/* ============================================================
+   BANNER / SVG NETWORK SECTION
+   ============================================================ */
+.banner {
+    background: #ffffff;
+    color: #1e41a7;
+    padding: 80px 6vw 56px;
+    margin-bottom: 0;
+}
+.banner h2 {
+    font-size: clamp(26px, 3.4vw, 38px);
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 22ch;
+    margin: 0 auto 16px;
+    color: #1a1f2e;
+}
+.banner p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #55627A;
+    max-width: 62ch;
+    margin: 0 auto 40px;
+}
+.cloud-net { width: 100%; max-width: 560px; height: auto; margin: 0 auto; display: block; }
+.cloud-net .net-node { cursor: pointer; }
+.cloud-net .net-node line {
+    stroke: #d9dee6;
+    stroke-width: 1.5;
+    transition: stroke 0.2s ease, stroke-width 0.2s ease;
+}
+.cloud-net .net-node .dot {
+    fill: #55627A;
+    opacity: 0.55;
+    transition: r 0.2s ease, opacity 0.2s ease, fill 0.2s ease;
+}
+.cloud-net .net-node text {
+    fill: #1a1f2e;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+.cloud-net .net-node:hover line,
+.cloud-net .net-node.active line { stroke: var(--accent-color); stroke-width: 2; }
+.cloud-net .net-node:hover .dot,
+.cloud-net .net-node.active .dot { r: 8; opacity: 1; fill: var(--accent-color); }
+.cloud-net .net-node:hover text,
+.cloud-net .net-node.active text { opacity: 1; }
+.cloud-net .hub-core { fill: var(--accent-color); }
+.cloud-net .hub-ring { fill: none; stroke: #5FE3CD; stroke-width: 1.5; opacity: 0.5; }
+@media (prefers-reduced-motion: no-preference) {
+    .cloud-net .hub-ring { animation: hubPulse 3s ease-in-out infinite; }
+}
+@keyframes hubPulse {
+    0%, 100% { r: 34; opacity: 0.5; }
+    50% { r: 40; opacity: 0.15; }
+}
+
+/* ============================================================
+   COMPARATIVE TABLE
+   ============================================================ */
+.comparison-section {
+    padding: 60px 0;
+    background: #f8f9fb;
+}
+.comparison-section h2 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #1a1f2e; }
+.comparison-section .subtitle { color: #55627A; margin-bottom: 36px; }
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    background: #fff;
+}
+.comparison-table thead th {
+    background: #1a1f2e;
+    color: #fff;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.comparison-table thead th:first-child { text-align: left; }
+.comparison-table tbody td {
+    padding: 12px 18px;
+    font-size: 14px;
+    color: #4a5568;
+    border-bottom: 1px solid #f0f2f5;
+    text-align: center;
+    vertical-align: middle;
+}
+.comparison-table tbody td:first-child { text-align: left; font-weight: 600; color: #1a1f2e; }
+.comparison-table tbody tr:last-child td { border-bottom: none; }
+.comparison-table tbody tr:hover td { background: #f0faf8; }
+.star-rating { color: #f59e0b; font-size: 13px; }
+
+/* ============================================================
+   CONTACT SECTION
+   ============================================================ */
+.section-title {
+    position: relative;
+    font-size: var(--section-title-font-size);
+    font-family: var(--primary-font);
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+span { color: var(--primary-color); }
+.btn_s {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    transition: 0.3s;
+    border: solid 2px var(--primary-color);
+    cursor: pointer;
+}
+.btn_s:hover { background: transparent; color: var(--primary-color); }
+/* ============================================================
+   IMAGE & VIDEO HELPERS
+   ============================================================ */
+.image-container {
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image-container img { width: 100%; height: 100%; object-fit: cover; }
+.video-section { text-align: center; margin: 20px 0; }
+.video-section video { max-width: 100%; height: auto; }
+.video-wrapper {
+    background: #1a1f2e;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+    display: block;
+}
+.video-fallback {
+    display: block;
+    margin: 12px auto 0;
+    font-size: 13px;
+    color: #55627A;
+}
+.video-fallback a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+.video-fallback a:hover { text-decoration: underline; }
+.video-section .btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 28px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+}
+.video-section .btn:hover { transform: scale(1.1); color: #fff; }
+
+/* ============================================================
+   CONTACT SECTION — REDESIGNED
+   ============================================================ */
+#contact-section {
+    background: transparent;
+    padding: 80px 0 60px;
+    height: auto;
+}
+#contact-section .contact-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1a1f2e;
+    margin-bottom: 6px;
+}
+#contact-section .contact-subtitle {
+    color: #55627A;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+/* Form card */
+.contact-form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.contact-form-card .form-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1a1f2e;
+    margin-bottom: 4px;
+}
+.contact-form-card .form-control {
+    border: 1.5px solid #e2e6ec;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #1a1f2e;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: none;
+}
+.contact-form-card .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(14,156,138,0.12);
+    outline: none;
+}
+.contact-form-card textarea.form-control {
+    resize: vertical;
+    min-height: 130px;
+}
+.btn-submit {
+    width: 100%;
+    padding: 13px;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+}
+.btn-submit:hover {
+    background: #0b7d6e;
+    transform: translateY(-2px);
+}
+/* Info card */
+.contact-info-card {
+    background: #1a1f2e;
+    border-radius: 16px;
+    padding: 36px 28px;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.contact-info-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #fff;
+}
+.contact-info-card p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 0;
+}
+.info-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.info-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background: rgba(14,156,138,0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.info-item-text strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2px;
+}
+.info-item-text span {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    /* override global span color */
+    color: rgba(255,255,255,0.55) !important;
+}
+.contact-info-card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+.contact-info-card a:hover { text-decoration: underline; }
+/* Success message */
+#form-msg {
+    display: none;
+    padding: 14px 20px;
+    background: #e8fbf5;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 10px;
+    color: #0b7d6e;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* ============================================================
+   PAGE-SPECIFIC BODY COLORS
+   ============================================================ */
+.bil1 { background: #dff0f7; }
+.bil2 { background: #0a497b; }
+.bil3 { background: #d5b59c; }
+.bil4-bg { background: #e8f0fe; }
+.bil5-bg { background: #fff3e8; }
+
+/* Service badges on subpages */
+.service-badge {
+    display: inline-block;
+    background: rgba(14,156,138,0.12);
+    color: var(--accent-color);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Make bil1 sections transparent so body color shows */
+.bil1 .section-icons,
+.bil1 .banner,
+.bil1 .comparison-section,
+.bil1 #contact-section {
+    background: transparent !important;
+}
+
+/* ============================================================
+   FADE-IN ANIMATION (Intersection Observer)
+   ============================================================ */
+.fade-in-el {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in-el.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================================
+   BACK TO TOP BUTTON
+   ============================================================ */
+#back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(14,156,138,0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: background 0.2s, transform 0.2s;
+}
+#back-to-top:hover { background: #0b7d6e; transform: scale(1.1); }
+#back-to-top.visible { display: flex; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 767px) {
+    .carousel-item { min-height: 500px; }
+    .carousel-item img { min-height: 500px; }
+    .carousel-caption { bottom: 30px; }
+    .carousel-caption h5 { font-size: 36px; margin-top: 0; }
+    .carousel-caption p { width: 100%; font-size: 15px; }
+    .services { padding: 30px 0; }
+    .banner { padding: 40px 4vw 32px; margin-bottom: 0; }
+    .box-icons { border-right: none; border-bottom: 1px solid #e2e6ec; }
+    #contact-section form { width: 95%; }
+    #form-msg { width: 95%; }
+    .comparison-section { padding: 40px 0; }
+    .comparison-table { font-size: 13px; }
+}

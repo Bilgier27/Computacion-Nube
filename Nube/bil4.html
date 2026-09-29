@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/cloud.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Microsoft Azure</title>
+</head>
+<body class="bil4-bg">
+
+    <button id="back-to-top" aria-label="Volver arriba">&#8679;</button>
+
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="bil.html">
+                <img src="Assets/cloud.png" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMain" aria-controls="navbarMain"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bil.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Noticias</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cartelera nueva</a></li>
+                            <li><a class="dropdown-item" href="#">Próximo evento</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Siempre el mejor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- TITLE BADGE -->
+        <section class="video-section mt-4">
+            <div class="p-3 mb-2 text-white rounded" style="background:#0078d4;">
+                <img src="Assets/Microsoft-Azure-2025-Logo.webp" alt="Microsoft Azure Logo" height="40"
+                    style="vertical-align:middle; margin-right:12px;"> Microsoft Azure
+            </div>
+        </section>
+
+        <!-- HERO IMAGE -->
+        <section class="mb-5 image-section fade-in-el">
+            <div class="image-container">
+                <img src="Assets/Microsoft-Azure.jpg" alt="Microsoft Azure - Plataforma Cloud" />
+            </div>
+        </section>
+
+        <!-- DESCRIPTION -->
+        <section class="mb-5 description fade-in-el">
+            <div class="p-3 mb-3 text-white rounded" style="background:#0078d4;">Descripción</div>
+            <p><strong>Microsoft Azure:</strong> es la plataforma de computación en la nube de Microsoft, lanzada en 2010, que actualmente ofrece más de 200 productos y servicios en la nube disponibles en más de 60 regiones geográficas alrededor del mundo.</p>
+            <p>Azure destaca por su integración nativa con el ecosistema Microsoft, lo que la convierte en la opción preferida para empresas que ya utilizan herramientas como Windows Server, Active Directory, SQL Server y Office 365. Su arquitectura híbrida a través de <strong>Azure Arc</strong> permite a las organizaciones gestionar y desplegar aplicaciones en entornos locales, en la nube y en el edge computing desde una única interfaz de control unificada. Esto, combinado con su enfoque en cumplimiento normativo y certificaciones de seguridad internacionales, la posiciona como la plataforma cloud de referencia para sectores regulados como banca, salud, gobierno y manufactura.</p>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="mb-5 fade-in-el">
+            <div class="p-3 mb-3 text-white rounded" style="background:#0078d4;">Principales Servicios</div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">Cómputo</span>
+                        <h5 class="fw-bold">Azure Virtual Machines</h5>
+                        <p class="text-muted mb-0">Máquinas virtuales Windows y Linux con alta disponibilidad y escalado automático.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">Almacenamiento</span>
+                        <h5 class="fw-bold">Azure Blob Storage</h5>
+                        <p class="text-muted mb-0">Almacenamiento masivo de objetos no estructurados con acceso global y cifrado.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">Contenedores</span>
+                        <h5 class="fw-bold">Azure Kubernetes Service (AKS)</h5>
+                        <p class="text-muted mb-0">Orquestación de contenedores administrada para desplegar aplicaciones modernas.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">IA &amp; ML</span>
+                        <h5 class="fw-bold">Azure AI Services</h5>
+                        <p class="text-muted mb-0">APIs de visión artificial, lenguaje natural y modelos de OpenAI integrados.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">Serverless</span>
+                        <h5 class="fw-bold">Azure Functions</h5>
+                        <p class="text-muted mb-0">Ejecución de código sin servidores, pagando solo por las ejecuciones reales.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 border rounded bg-white">
+                        <span class="service-badge">Base de datos</span>
+                        <h5 class="fw-bold">Azure SQL Database</h5>
+                        <p class="text-muted mb-0">Base de datos relacional totalmente administrada con inteligencia y alta disponibilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video-section mb-4">
+            <h2 class="text-dark">¿Qué es Microsoft Azure?</h2>
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NKEFWyqJ5XA"
+                        title="Qué es Microsoft Azure" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="video-fallback">¿No carga el video? <a href="https://www.youtube.com/watch?v=NKEFWyqJ5XA" target="_blank" rel="noopener">Ver en YouTube &#9654;</a></p>
+        </section>
+
+        <!-- BACK BUTTON -->
+        <section class="video-section mb-5">
+            <a href="bil.html" class="btn bg-black text-white">&#8592; Volver a Computación en la Nube</a>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">&copy; 2026 Computación en la Nube &mdash; Todos los derechos reservados</p>
+    </footer>
+
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/archive.js"></script>
+</body>
+</html>

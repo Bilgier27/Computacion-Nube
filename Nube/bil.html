@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/cloud.png">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Computación en la Nube</title>
+</head>
+<body>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" aria-label="Volver arriba">&#8679;</button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="bil.html">
+                <img src="Assets/cloud.png" alt="Logo Computación Nube" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMain" aria-controls="navbarMain"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bil.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Noticias</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cartelera nueva</a></li>
+                            <li><a class="dropdown-item" href="#">Próximo evento</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Siempre el mejor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselBilgier" class="carousel slide mb-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBilgier" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBilgier" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBilgier" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/Google-Cloud-AI-Courses.webp" class="d-block w-100" alt="Google Cloud">
+                <div class="carousel-caption">
+                    <h5>Google Cloud</h5>
+                    <p>Inteligencia artificial, datos y nube empresarial al alcance de todos.</p>
+                    <a href="bil2.html" class="btn-cta">Explorar Google Cloud &rarr;</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/aws 4k.webp" class="d-block w-100" alt="Amazon AWS">
+                <div class="carousel-caption">
+                    <h5>Amazon AWS</h5>
+                    <p>Más de 200 servicios en la nube para escalar tu negocio globalmente.</p>
+                    <a href="bil3.html" class="btn-cta">Explorar Amazon AWS &rarr;</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Microsoft-Azure.jpg" class="d-block w-100" alt="Microsoft Azure">
+                <div class="carousel-caption">
+                    <h5>Microsoft Azure</h5>
+                    <p>La plataforma cloud de Microsoft para empresas híbridas y modernas.</p>
+                    <a href="bil4.html" class="btn-cta">Explorar Microsoft Azure &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBilgier" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBilgier" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- SERVICES CARDS -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 fade-in-el">
+                    <div class="card h-100 text-white text-center bg-Toma pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Google Cloud</h3>
+                            <p>Es la plataforma de servicios en la nube desarrollada por Google. Ofrece infraestructura y herramientas para desarrollar aplicaciones, almacenar información, procesar grandes cantidades de datos y construir soluciones basadas en inteligencia artificial.</p>
+                            <a href="bil2.html" class="btn bg-danger text-white">Ir a Google Cloud</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 fade-in-el">
+                    <div class="card h-100 text-white text-center bg-Toma2 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Amazon AWS</h3>
+                            <p>Es una plataforma de servicios de computación en la nube desarrollada por Amazon. Ofrece una amplia variedad de herramientas para crear, implementar y administrar aplicaciones e infraestructura mediante Internet.</p>
+                            <a href="bil3.html" class="btn bg-primary text-white">Ir a Amazon AWS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 fade-in-el">
+                    <div class="card h-100 text-white text-center bg-Toma3 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Microsoft Azure</h3>
+                            <p>Es la plataforma de computación en la nube desarrollada por Microsoft. Proporciona herramientas para crear, ejecutar y administrar aplicaciones y servicios utilizando infraestructura alojada en centros de datos de Microsoft.</p>
+                            <a href="bil4.html" class="btn bg-black text-white">Ir a Microsoft Azure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 fade-in-el">
+                    <div class="card h-100 text-white text-center bg-Toma4 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Oracle Cloud (OCI)</h3>
+                            <p>Es la plataforma de computación en la nube desarrollada por Oracle. Proporciona infraestructura y servicios para ejecutar bases de datos, aplicaciones empresariales y cargas de trabajo críticas en la nube.</p>
+                            <a href="bil5.html" class="btn bg-black text-white">Ir a Oracle Cloud</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ICONS -->
+    <section class="section-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 box-icons fade-in-el">
+                    <div class="d-flex align-items-center">
+                        <img src="Assets/megafono.png" alt="Noticias" width="50" height="50">
+                        <div class="ms-4">
+                            <h3>Últimas noticias sobre la nube</h3>
+                            <p>Entérate de los estrenos, noticias y rumores más recientes en el mundo de la computación en la nube.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 box-icons fade-in-el">
+                    <div class="d-flex align-items-center">
+                        <img src="Assets/settings.png" alt="Próximos inventos" width="50" height="50">
+                        <div class="ms-4">
+                            <h3>Próximos inventos</h3>
+                            <p>Conoce las actualizaciones que llegarán pronto a la administración y marca tu calendario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 box-icons fade-in-el">
+                    <div class="d-flex align-items-center">
+                        <img src="Assets/discount-tag.png" alt="Promociones" width="50" height="50">
+                        <div class="ms-4">
+                            <h3>Promociones</h3>
+                            <p>Aprovecha las mejores ofertas en espacios en nube.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOUD GRID -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-4">
+                        <h2>Nubes disponibles</h2>
+                        <p>Aquí podrás encontrar algunas de las nubes existentes actualmente</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cloud-filters" id="cloudFilters">
+                <button class="btn-filter active" data-cat="all">Todas</button>
+                <button class="btn-filter" data-cat="IaaS">IaaS</button>
+                <button class="btn-filter" data-cat="PaaS">PaaS</button>
+                <button class="btn-filter" data-cat="SaaS">SaaS</button>
+            </div>
+
+            <div class="cloud-grid" id="cloudGrid">
+
+                <div class="cloud-card featured fade-in-el" data-cat="IaaS">
+                    <div class="logo-wrap"><img src="Assets/Cloudflare-Logo-2009.png" alt="Cloudflare"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge IaaS">IaaS</span>
+                        <div class="card-title">CloudFlare</div>
+                        <p>Ofrece seguridad, CDN, DNS y servicios en la nube para sitios web y aplicaciones.</p>
+                        <div class="extra-fact">Fundada en 2009 en Estados Unidos.</div>
+                    </div>
+                </div>
+
+                <div class="cloud-card featured fade-in-el" data-cat="IaaS">
+                    <div class="logo-wrap"><img src="Assets/ibm_cloud_logo_icon_169999.webp" alt="IBM Cloud"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge IaaS">IaaS</span>
+                        <div class="card-title">IBM Cloud</div>
+                        <p>Usada en banca, salud e industria.</p>
+                        <div class="extra-fact">Una de las nubes empresariales más antiguas del mercado.</div>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="SaaS">
+                    <div class="logo-wrap"><img src="Assets/Salesforce-Logo.png" alt="Salesforce"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge SaaS">SaaS</span>
+                        <div class="card-title">SalesForce</div>
+                        <p>Plataforma en la nube especializada en CRM y gestión de clientes.</p>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="PaaS">
+                    <div class="logo-wrap"><img src="Assets/Oracle-Cloud-Emblem.png" alt="Oracle Cloud"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge PaaS">PaaS</span>
+                        <div class="card-title">OracleCloud</div>
+                        <p>Enfocada en bases de datos y aplicaciones empresariales.</p>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="PaaS">
+                    <div class="logo-wrap"><img src="Assets/SAP-BTP-IN-LOGO.webp" alt="SAP BTP"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge PaaS">PaaS</span>
+                        <div class="card-title">SAP BTP</div>
+                        <p>Nube empresarial para análisis de datos, aplicaciones e integración.</p>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="IaaS">
+                    <div class="logo-wrap"><img src="Assets/Alibaba-Cloud-Logo (1).png" alt="Alibaba Cloud"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge IaaS">IaaS</span>
+                        <div class="card-title">Alibaba Cloud</div>
+                        <p>Muy utilizada en Asia y comercio electrónico.</p>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="IaaS">
+                    <div class="logo-wrap"><img src="Assets/HUAWEI-logo.png" alt="Huawei Cloud"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge IaaS">IaaS</span>
+                        <div class="card-title">HuaweiCloud</div>
+                        <p>Ofrece infraestructura, almacenamiento e inteligencia artificial.</p>
+                    </div>
+                </div>
+
+                <div class="cloud-card fade-in-el" data-cat="IaaS">
+                    <div class="logo-wrap"><img src="Assets/digitalocean-logo.png" alt="DigitalOcean"></div>
+                    <div class="card-body">
+                        <span class="cloud-badge IaaS">IaaS</span>
+                        <div class="card-title">DigitalOcean</div>
+                        <p>Popular entre desarrolladores y pequeñas empresas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SVG NETWORK BANNER -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Las mejores noticias acerca de las nubes las encuentras aquí</h2>
+                    <p>Todo sobre el mundo cloud en un solo lugar. Encuentra las noticias más recientes, lanzamientos, actualizaciones y tendencias de las principales plataformas de nube para mantenerte siempre informado.</p>
+
+                    <svg class="cloud-net" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" aria-label="Red de proveedores cloud">
+                        <circle class="hub-ring" cx="250" cy="160" r="34"/>
+                        <circle class="hub-core" cx="250" cy="160" r="26"/>
+                        <g class="net-node" data-name="Cloudflare" tabindex="0">
+                            <line x1="250" y1="160" x2="100" y2="70"/>
+                            <circle class="dot" cx="100" cy="70" r="6"/>
+                            <text x="100" y="52" text-anchor="middle">Cloudflare</text>
+                        </g>
+                        <g class="net-node" data-name="IBM Cloud" tabindex="0">
+                            <line x1="250" y1="160" x2="400" y2="70"/>
+                            <circle class="dot" cx="400" cy="70" r="6"/>
+                            <text x="400" y="52" text-anchor="middle">IBM Cloud</text>
+                        </g>
+                        <g class="net-node" data-name="SalesForce" tabindex="0">
+                            <line x1="250" y1="160" x2="60" y2="180"/>
+                            <circle class="dot" cx="60" cy="180" r="6"/>
+                            <text x="60" y="200" text-anchor="middle">SalesForce</text>
+                        </g>
+                        <g class="net-node" data-name="OracleCloud" tabindex="0">
+                            <line x1="250" y1="160" x2="440" y2="180"/>
+                            <circle class="dot" cx="440" cy="180" r="6"/>
+                            <text x="440" y="200" text-anchor="middle">OracleCloud</text>
+                        </g>
+                        <g class="net-node" data-name="SAP BTP" tabindex="0">
+                            <line x1="250" y1="160" x2="150" y2="280"/>
+                            <circle class="dot" cx="150" cy="280" r="6"/>
+                            <text x="150" y="300" text-anchor="middle">SAP BTP</text>
+                        </g>
+                        <g class="net-node" data-name="Alibaba Cloud" tabindex="0">
+                            <line x1="250" y1="160" x2="350" y2="280"/>
+                            <circle class="dot" cx="350" cy="280" r="6"/>
+                            <text x="350" y="300" text-anchor="middle">Alibaba Cloud</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARATIVE TABLE -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="text-center mb-4 fade-in-el">
+                <h2>Comparativa de principales proveedores</h2>
+                <p class="subtitle">Una visión rápida de las características clave de los 4 grandes de la nube</p>
+            </div>
+            <div class="table-responsive fade-in-el">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Google Cloud</th>
+                            <th>Amazon AWS</th>
+                            <th>Microsoft Azure</th>
+                            <th>Oracle Cloud</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capa gratuita</td>
+                            <td>&#x2705; $300 crédito</td>
+                            <td>&#x2705; 12 meses</td>
+                            <td>&#x2705; 12 meses</td>
+                            <td>&#x2705; Always Free</td>
+                        </tr>
+                        <tr>
+                            <td>IA / ML</td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9734;&#9734;</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bases de datos</td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                        </tr>
+                        <tr>
+                            <td>Seguridad</td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></td>
+                            <td><span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></td>
+                        </tr>
+                        <tr>
+                            <td>Cuota de mercado</td>
+                            <td>12%</td>
+                            <td>31%</td>
+                            <td>25%</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Nube híbrida</td>
+                            <td>&#x2705; Anthos</td>
+                            <td>&#x2705; Outposts</td>
+                            <td>&#x2705; Arc</td>
+                            <td>&#x2705; Dedicated</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact-section">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 class="contact-title">Contáctanos</h2>
+                <p class="contact-subtitle">¿Tienes preguntas sobre computación en la nube? Escríbenos y te respondemos pronto.</p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- FORM CARD -->
+                <div class="col-12 col-lg-7 fade-in-el">
+                    <div class="contact-form-card">
+                        <h4 class="fw-bold mb-1" style="color:#1a1f2e;">Envíanos un mensaje</h4>
+                        <p class="text-muted mb-4" style="font-size:13px;">Todos los campos son obligatorios.</p>
+
+                        <form id="contact-form" class="needs-validation" novalidate>
+                            <div class="row g-3">
+
+                                <!-- Nombre -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="c-name"
+                                            name="user_name"
+                                            placeholder="Tu nombre completo"
+                                            required
+                                            minlength="2">
+                                        <label for="c-name">Nombre completo</label>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa tu nombre (mínimo 2 caracteres).
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="c-email"
+                                            name="email"
+                                            placeholder="tu@correo.com"
+                                            required>
+                                        <label for="c-email">Correo electrónico</label>
+                                        <div class="invalid-feedback">
+                                            Ingresa un correo electrónico válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Asunto -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="c-subject"
+                                            name="subject"
+                                            placeholder="¿En qué podemos ayudarte?"
+                                            required
+                                            minlength="4">
+                                        <label for="c-subject">Asunto</label>
+                                        <div class="invalid-feedback">
+                                            Por favor describe el asunto de tu mensaje.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mensaje -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea
+                                            class="form-control"
+                                            id="c-msg"
+                                            name="comment"
+                                            placeholder="Escribe tu mensaje aquí..."
+                                            style="height: 140px;"
+                                            required
+                                            minlength="10"></textarea>
+                                        <label for="c-msg">Mensaje</label>
+                                        <div class="invalid-feedback">
+                                            El mensaje debe tener al menos 10 caracteres.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit -->
+                                <div class="col-12 mt-4">
+                                    <button class="btn-submit py-3" type="submit">
+                                        Enviar mensaje &#10148;
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div id="form-msg" class="mt-3"></div>
+                    </div>
+                </div>
+
+                <!-- INFO CARD -->
+                <div class="col-12 col-lg-5">
+                    <div class="contact-info-card">
+                        <div>
+                            <h3>Información de contacto</h3>
+                            <p>Estamos disponibles para responder tus consultas sobre el mundo de la computación en la nube.</p>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-item-text">
+                                <strong>Correo electrónico</strong>
+                                <a href="mailto:contacto@computacionnube.com">contacto@computacionnube.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🌐</div>
+                            <div class="info-item-text">
+                                <strong>Sitio web</strong>
+                                <span>www.computacionnube.com</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-item-text">
+                                <strong>Horario de atención</strong>
+                                <span>Lunes a Viernes, 9:00 – 18:00 (CST)</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">☁️</div>
+                            <div class="info-item-text">
+                                <strong>Temas que cubrimos</strong>
+                                <span>Google Cloud · AWS · Azure · Oracle Cloud y más</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark p-3 text-center">
+        <div class="container">
+            <p class="text-white mb-0">&copy; 2026 Computación en la Nube &mdash; Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/archive.js"></script>
+</body>
+</html>
