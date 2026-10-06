@@ -3,131 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Microsoft Azure: plataforma de computación en la nube para aplicaciones empresariales, cómputo híbrido, bases de datos e inteligencia artificial.">
     <link rel="shortcut icon" href="Assets/cloud.png" type="image/x-icon">
     <link rel="stylesheet" href="Css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/style.css">
-    <title>Microsoft Azure</title>
+    <title>Microsoft Azure · Computación en la Nube</title>
 </head>
-<body class="bil4-bg">
+<body class="bil4-bg page-azure">
 
-    <button id="back-to-top" aria-label="Volver arriba">&#8679;</button>
+    <!-- ENLACE DE ACCESIBILIDAD -->
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button id="back-to-top" type="button" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <!-- ========================================================
+         NAVBAR
+         ======================================================== -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Navegación principal">
+        <div class="container-xl">
             <a class="navbar-brand" href="bil.html">
-                <img src="Assets/cloud.png" alt="Logo" width="50" height="50">
+                <img src="Assets/cloud.png" alt="Logo Computación Nube" width="40" height="40">
+                <span class="brand-text">Computación <strong>en la Nube</strong></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarMain" aria-controls="navbarMain"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-lg-4 me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="bil.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Proveedores
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bil2.html">Google Cloud</a></li>
+                            <li><a class="dropdown-item" href="bil3.html">Amazon AWS</a></li>
+                            <li><a class="dropdown-item active" aria-current="page" href="bil4.html">Microsoft Azure</a></li>
+                            <li><a class="dropdown-item" href="bil5.html">Oracle Cloud</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Noticias</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Noticias
+                        </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Cartelera nueva</a></li>
-                            <li><a class="dropdown-item" href="#">Próximo evento</a></li>
+                            <li><a class="dropdown-item" href="bil.html#news-latest">Últimas noticias</a></li>
+                            <li><a class="dropdown-item" href="bil.html#news-upcoming">Próximas innovaciones</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Siempre el mejor</a></li>
+                            <li><a class="dropdown-item" href="bil.html#news-free">Promociones y capas gratuitas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Nosotros</a>
+                        <a class="nav-link" href="bil.html#contact-section">Nosotros</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <form class="nav-search" role="search" id="site-search" action="bil.html">
+                    <label for="search-input" class="visually-hidden">Buscar en la página</label>
+                    <svg class="nav-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input class="form-control" id="search-input" type="search" placeholder="Buscar tecnología, nube..." aria-label="Buscar" autocomplete="off">
+                    <button class="nav-search-btn" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <!-- ========================================================
+         CONTENIDO PRINCIPAL
+         ======================================================== -->
+    <main id="contenido" class="container-xl py-3">
 
-        <!-- TITLE BADGE -->
-        <section class="video-section mt-4">
-            <div class="p-3 mb-2 text-white rounded" style="background:#0078d4;">
-                <img src="Assets/Microsoft-Azure-2025-Logo.webp" alt="Microsoft Azure Logo" height="40"
-                    style="vertical-align:middle; margin-right:12px;"> Microsoft Azure
+        <!-- ENCABEZADO VISUAL DEL PROVEEDOR -->
+        <header class="provider-header fade-in-el">
+            <div class="provider-header-inner">
+                <div class="provider-header-logo-wrap">
+                    <img src="Assets/Microsoft-Azure-2025-Logo.webp" alt="Logo de Microsoft Azure" width="48" height="48">
+                </div>
+                <div class="provider-header-text">
+                    <span class="provider-header-tag">Infraestructura Cloud · Microsoft Cloud Platform</span>
+                    <h1 class="provider-header-title">Microsoft Azure</h1>
+                    <p class="provider-header-subtitle">La plataforma cloud de Microsoft para aplicaciones y servicios empresariales.</p>
+                </div>
             </div>
-        </section>
+        </header>
 
         <!-- HERO IMAGE -->
-        <section class="mb-5 image-section fade-in-el">
+        <section class="subpage-hero-image-wrap fade-in-el" aria-label="Imagen representativa de Microsoft Azure">
             <div class="image-container">
-                <img src="Assets/Microsoft-Azure.jpg" alt="Microsoft Azure - Plataforma Cloud" />
+                <img src="Assets/Microsoft-Azure.jpg"
+                    alt="Microsoft Azure - Plataforma Cloud Empresarial y Centros de Datos" loading="lazy">
             </div>
         </section>
 
-        <!-- DESCRIPTION -->
-        <section class="mb-5 description fade-in-el">
-            <div class="p-3 mb-3 text-white rounded" style="background:#0078d4;">Descripción</div>
-            <p><strong>Microsoft Azure:</strong> es la plataforma de computación en la nube de Microsoft, lanzada en 2010, que actualmente ofrece más de 200 productos y servicios en la nube disponibles en más de 60 regiones geográficas alrededor del mundo.</p>
-            <p>Azure destaca por su integración nativa con el ecosistema Microsoft, lo que la convierte en la opción preferida para empresas que ya utilizan herramientas como Windows Server, Active Directory, SQL Server y Office 365. Su arquitectura híbrida a través de <strong>Azure Arc</strong> permite a las organizaciones gestionar y desplegar aplicaciones en entornos locales, en la nube y en el edge computing desde una única interfaz de control unificada. Esto, combinado con su enfoque en cumplimiento normativo y certificaciones de seguridad internacionales, la posiciona como la plataforma cloud de referencia para sectores regulados como banca, salud, gobierno y manufactura.</p>
+        <!-- SECCIÓN DE DESCRIPCIÓN -->
+        <section class="subpage-description-card fade-in-el" aria-labelledby="desc-heading">
+            <div class="subpage-section-title-wrap">
+                <h2 id="desc-heading" class="subpage-section-title">Descripción y Soluciones Híbridas</h2>
+            </div>
+            <p class="subpage-lead-text">
+                <strong>Microsoft Azure:</strong> es la plataforma de computación en la nube de Microsoft, lanzada en 2010, que actualmente ofrece más de 200 productos y servicios en la nube disponibles en más de 60 regiones geográficas alrededor del mundo.
+            </p>
+            <p class="subpage-body-text">
+                Azure destaca por su integración nativa con el ecosistema Microsoft, lo que la convierte en la opción preferida para empresas que ya utilizan herramientas como Windows Server, Active Directory, SQL Server y Microsoft 365. Su arquitectura híbrida a través de <strong>Azure Arc</strong> permite a las organizaciones gestionar y desplegar aplicaciones en entornos locales (on-premises), en múltiples nubes y en el edge computing desde una interfaz unificada.
+            </p>
+            <p class="subpage-body-text mt-3">
+                Esto, combinado con su riguroso enfoque en cumplimiento normativo y más de 100 certificaciones de seguridad internacionales, la posiciona como la plataforma cloud de referencia para sectores altamente regulados como la banca, salud, gobiernos y manufactura global.
+            </p>
         </section>
 
-        <!-- SERVICES -->
-        <section class="mb-5 fade-in-el">
-            <div class="p-3 mb-3 text-white rounded" style="background:#0078d4;">Principales Servicios</div>
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">Cómputo</span>
-                        <h5 class="fw-bold">Azure Virtual Machines</h5>
-                        <p class="text-muted mb-0">Máquinas virtuales Windows y Linux con alta disponibilidad y escalado automático.</p>
-                    </div>
+        <!-- SECCIÓN: PRINCIPALES SERVICIOS -->
+        <section class="mb-5 fade-in-el" aria-labelledby="services-heading">
+            <div class="section-header mb-4 text-start">
+                <span class="eyebrow">Capacidades</span>
+                <h2 id="services-heading">Principales Servicios de Azure</h2>
+                <p>Ecosistema corporativo para virtualización, contenedores, bases de datos e IA generativa.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">Cómputo</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure Virtual Machines</h3>
+                        <p>Máquinas virtuales Windows y Linux con alta disponibilidad, computación confidencial y escalado automático para cualquier tipo de carga de trabajo empresarial.</p>
+                    </article>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">Almacenamiento</span>
-                        <h5 class="fw-bold">Azure Blob Storage</h5>
-                        <p class="text-muted mb-0">Almacenamiento masivo de objetos no estructurados con acceso global y cifrado.</p>
-                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">Almacenamiento</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0 1.66 3.58 3 8 3s8-1.34 8-3-3.58-3-8-3-8 1.34-8 3"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/><path d="M4 18c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure Blob Storage</h3>
+                        <p>Almacenamiento masivo de objetos no estructurados con redundancia geográfica, niveles de acceso en caliente/frío y cifrado integral de datos en reposo.</p>
+                    </article>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">Contenedores</span>
-                        <h5 class="fw-bold">Azure Kubernetes Service (AKS)</h5>
-                        <p class="text-muted mb-0">Orquestación de contenedores administrada para desplegar aplicaciones modernas.</p>
-                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">Contenedores</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure Kubernetes Service (AKS)</h3>
+                        <p>Orquestación de contenedores totalmente administrada para desplegar, gestionar y gobernar microservicios modernos con seguridad y observabilidad nativas.</p>
+                    </article>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">IA &amp; ML</span>
-                        <h5 class="fw-bold">Azure AI Services</h5>
-                        <p class="text-muted mb-0">APIs de visión artificial, lenguaje natural y modelos de OpenAI integrados.</p>
-                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">IA &amp; ML</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure AI Services</h3>
+                        <p>APIs de visión por computadora, procesamiento de lenguaje natural y acceso exclusivo de nivel empresarial a los modelos de OpenAI (Azure OpenAI Service).</p>
+                    </article>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">Serverless</span>
-                        <h5 class="fw-bold">Azure Functions</h5>
-                        <p class="text-muted mb-0">Ejecución de código sin servidores, pagando solo por las ejecuciones reales.</p>
-                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">Serverless</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure Functions</h3>
+                        <p>Ejecución de código orientada a eventos sin aprovisionar servidores, acelerando el desarrollo y pagando únicamente por las invocaciones reales.</p>
+                    </article>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-3 border rounded bg-white">
-                        <span class="service-badge">Base de datos</span>
-                        <h5 class="fw-bold">Azure SQL Database</h5>
-                        <p class="text-muted mb-0">Base de datos relacional totalmente administrada con inteligencia y alta disponibilidad.</p>
-                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-feature-card">
+                        <div class="service-feature-head">
+                            <span class="service-feature-badge">Base de datos</span>
+                            <div class="service-feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                        </div>
+                        <h3>Azure SQL Database</h3>
+                        <p>Motor de bases de datos relacional totalmente administrado con inteligencia artificial integrada para ajuste de rendimiento y alta disponibilidad (99.995%).</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- VIDEO -->
-        <section class="video-section mb-4">
-            <h2 class="text-dark">¿Qué es Microsoft Azure?</h2>
+        <!-- SECCIÓN DE VIDEO -->
+        <section class="subpage-video-box fade-in-el" aria-labelledby="video-heading">
+            <h2 id="video-heading" class="subpage-video-title">¿Qué es Microsoft Azure?</h2>
             <div class="video-wrapper">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/NKEFWyqJ5XA"
@@ -136,20 +216,80 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="video-fallback">¿No carga el video? <a href="https://www.youtube.com/watch?v=NKEFWyqJ5XA" target="_blank" rel="noopener">Ver en YouTube &#9654;</a></p>
+            <p class="video-fallback">
+                ¿No carga el video? <a href="https://www.youtube.com/watch?v=NKEFWyqJ5XA" target="_blank" rel="noopener">Ver en YouTube &#9654;</a>
+            </p>
         </section>
 
-        <!-- BACK BUTTON -->
-        <section class="video-section mb-5">
-            <a href="bil.html" class="btn bg-black text-white">&#8592; Volver a Computación en la Nube</a>
-        </section>
+        <!-- BOTÓN VOLVER -->
+        <div class="subpage-back-box fade-in-el">
+            <a href="bil.html" class="btn-back-home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Volver a Computación en la Nube
+            </a>
+        </div>
 
-    </div>
+    </main>
 
-    <footer class="bg-dark text-white text-center p-3">
-        <p class="mb-0">&copy; 2026 Computación en la Nube &mdash; Todos los derechos reservados</p>
+    <!-- ========================================================
+         FOOTER
+         ======================================================== -->
+    <footer class="site-footer">
+        <div class="container-xl">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <a class="footer-brand" href="bil.html">
+                        <img src="Assets/cloud.png" alt="" width="40" height="40">
+                        <span>Computación en la Nube</span>
+                    </a>
+                    <p class="footer-desc">Todo sobre el mundo cloud en un solo lugar: proveedores, tipos de servicio y comparativas para aprender sobre computación en la nube.</p>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 offset-lg-1">
+                    <h2 class="footer-title">Navegación</h2>
+                    <ul class="footer-links">
+                        <li><a href="bil.html">Inicio</a></li>
+                        <li><a href="bil.html#services">Servicios</a></li>
+                        <li><a href="bil.html#clouds">Nubes disponibles</a></li>
+                        <li><a href="bil.html#comparison">Comparativa</a></li>
+                        <li><a href="bil.html#contact-section">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h2 class="footer-title">Proveedores</h2>
+                    <ul class="footer-links">
+                        <li><a href="bil2.html">Google Cloud</a></li>
+                        <li><a href="bil3.html">Amazon AWS</a></li>
+                        <li><a href="bil4.html">Microsoft Azure</a></li>
+                        <li><a href="bil5.html">Oracle Cloud</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul class="footer-links">
+                        <li><a href="mailto:bilgier.pereaas@amigo.edu.co">bilgier.pereaas@amigo.edu.co</a></li>
+                        <li class="footer-text">Lunes a Viernes, 9:00 a.m. – 6:00 p.m. (Colombia)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Computación en la Nube &mdash; Todos los derechos reservados</p>
+                <div class="footer-bottom-links">
+                    <a href="bil.html">Inicio</a>
+                    <span>&bull;</span>
+                    <a href="bil.html#contact-section">Contacto</a>
+                    <span>&bull;</span>
+                    <a href="#contenido">Ir arriba</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="Js/bootstrap.min.js"></script>
     <script src="Js/archive.js"></script>
 </body>
